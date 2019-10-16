@@ -42,7 +42,7 @@ export const StyledHome = styled.div`
     }
 
     .row-half.right{
-      background: none;
+      background: white;
       padding-bottom:10px;
     }
 
@@ -62,7 +62,6 @@ export const StyledHome = styled.div`
     }
 
     p {
-      width: 50%;
       margin:0 auto;
       padding-bottom: 30px;
       text-align: center;
@@ -82,8 +81,8 @@ export const StyledHome = styled.div`
         width: 250px;
         height: 35px;
         margin: 60px 0;
-        border-radius: 10px;
-        color: ##666A7C;
+        border-radius: 5px;
+        color: #666A7C;
         text-align: left;
         padding: 10px;
         font-size: 16px;
@@ -94,7 +93,7 @@ export const StyledHome = styled.div`
       }
     }
     button {
-      width: 170px;
+      width: 190px;
       background-color:#56C1CB;
       font-size: 11px;
       font-weight: 600;
@@ -120,6 +119,10 @@ export const StyledHome = styled.div`
         font-size: 42px;
         line-height: 50px;
       }
+      p {
+        width: 80%;
+      }
+  
       form {
         input[type='text'] {
           width: 60%;
@@ -139,16 +142,25 @@ export const StyledHome = styled.div`
         padding: 16px;
       }
       .row{
-        height: 50%;
+        height: 70%;
+        width: 85%;
       }
       .row-half{
-        border-top-left-radius:5px;
-        border-bottom-left-radius:5px;    
+        border-top-right-radius:5px;
+        border-bottom-right-radius:5px;    
+        margin-right:50px;
+        box-shadow: 18px 18px 8px -5px rgba(238,238,238,0.66);
       }
   
       .row-half.right{
-        background: none;
+        background: white;
         width: 60%;
+        border:1px solid #DBDBDB;
+        border-top-left-radius:5px;
+        border-bottom-left-radius:5px;    
+        border-top-right-radius:0px;
+        border-bottom-right-radius:0px;    
+        margin-right:0px;
       }
   
     }

@@ -4,10 +4,10 @@ export const StyledCard = styled.div`
   margin: 10px 5px;
   width: 100%;
   height: 340px;
-  background-color: rgba(219, 219, 219, 0.35);
+  background-color: white;
   border-radius: 5px;
-  box-shadow: ${props =>
-    props.active ? '-1px 1px 5px 5px rgba(86, 193, 203, 0.5)' : '-1px 1px 5px 1px rgba(219, 219, 219, 1)'};
+  border: ${props =>
+    props.active ? '1px solid #DBDBDB' : 'none'};
   transition: 0.2s;
   transform: ${props => (props.active ? 'scale(1.05)' : 'scale(1)')};
   
@@ -30,6 +30,7 @@ export const StyledCard = styled.div`
   img {
     width: 100%;
     height: 230px;
+    border-bottom:2px solid #ffffff;
     border-radius: 5px 5px 0 0;
   }
   @media (min-width: 450px) {

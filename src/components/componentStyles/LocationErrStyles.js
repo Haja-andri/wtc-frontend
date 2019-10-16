@@ -1,18 +1,17 @@
 import styled from 'styled-components';
-import icon from '../../assets/searchicon.png';
+import localisation from '../../assets/icons8-marker-red.png';
 
 export const StyledLocationErr = styled.div`
-  width: 55vw;
   margin: 0 auto;
   text-align: center;
-  padding-right: 30px;
+  width: 100%;
   h4 {
-    font-size: 2rem;
-    padding-top: 30px;
+    font-size: 1.5rem;
+    padding-top: 20px;
   }
   h6{
     padding-top: 10px;
-    font-weight: unset;
+    font-size: .8rem;
     line-height: 1.5;
   }
   p {
@@ -40,34 +39,35 @@ export const StyledLocationErr = styled.div`
       margin-right: 180px;
     }
     input[type='text'] {
-      background: rgba(219, 219, 219, 0.5);
+      background: url(${localisation}) no-repeat 3px;
+      background-size: 20px;
       width: 85%;
       height: 35px;
       margin: 0 auto;
-      border: none;
-      border-radius: 10px 0 0 10px;
+      border:1px solid #DBDBDB;
       color: black;
       text-align: left;
-      padding: 0 10px;
-      @media (min-width: 600px) {
-        width: 100%;
-      }
+      padding-left: 30px;
       ::-webkit-input-placeholder {
-        color: #fff;
-        font-size: 12px;
-        padding: 8px;
+        color: ##666A7C;
+        font-size: 14px;
       }
     }
-    input[type='submit'] {
-      margin: 0 auto;
-      background: url(${icon}) no-repeat scroll center rgba(255, 150, 1, 0.8);
-      border-radius: 0 10px 10px 0;
-      border: none;
-      height: 35px;
-      width: 50px;
-      &:hover {
-        cursor: pointer;
-      }
+    }
+  }
+  @media (min-width: 600px) {
+    width: 90%;
+    input[type='text'] {
+      width: 50%;
+    }
+    h4 {
+      font-size: 2rem;
+      padding-top: 30px;
+    }
+    h6{
+      padding-top: 10px;
+      font-weight: unset;
+      line-height: 1.5;
     }
   }
 `;

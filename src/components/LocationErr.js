@@ -31,8 +31,7 @@ const LocationErr = (props) => {
       <h6>If you have active filters you could try to disable them. <br /> Otherwise you could chose one of the options below.</h6>
       <p>You could search for a place manually </p>
       <form type="submit">
-        <input id="location-seach" type="text" placeholder="Search" />
-        <input type="submit" value="" />
+        <input id="location-seach" type="text" placeholder="Search somewhere else" />
       </form>
       <p>Or just add a new place here</p>
       <button onClick={onAddLocation}>ADD A PLACE</button>

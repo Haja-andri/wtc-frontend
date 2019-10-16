@@ -4,9 +4,10 @@ export const StyledCheckbox = styled.label`
   display: block;
   position: relative;
   padding-left: 25px;
-  margin: 12px;
+  margin-left: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 13px;
   user-select: none;
   input {
     position: absolute;
@@ -46,4 +47,9 @@ export const StyledCheckbox = styled.label`
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
+  @media (min-width: 600px) {
+    margin: 12px;
+    font-size: 16px;
+  }
+
 `;
