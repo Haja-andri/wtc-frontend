@@ -1,12 +1,10 @@
 import styled from 'styled-components';
-import home from '../../assets/caffe.jpg';
+import home from '../../assets/map-home.jpg';
 import localisation from '../../assets/icons8-marker-red.png';
 
 export const StyledHome = styled.div`
   height: 100vh;
-  background-image: url(${home});
-  background-size: cover;
-  background-position: center;
+  background:white;
   box-shadow: inset 0 0 0 2000px rgba(102, 106, 124, 0.3);
   display: flex;
   flex-direction: column;
@@ -14,6 +12,7 @@ export const StyledHome = styled.div`
   z-index: 5;
 
   .container {
+    background:white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,10 +35,15 @@ export const StyledHome = styled.div`
       background: none;
       color: #666666;
       height: 100%;
+      background: rgba(219, 219, 219, 0.2);
+      background-image: url(${home});
+      background-size: cover;
+      background-position: center;
     }
 
     .row-half.right{
-      background: white;
+      background: none;
+      padding-bottom:10px;
     }
 
     h2, h3 {
@@ -60,17 +64,12 @@ export const StyledHome = styled.div`
     p {
       width: 50%;
       margin:0 auto;
-      padding-bottom: 20px;
+      padding-bottom: 30px;
       text-align: center;
+      color: #666A7C;
     }
     .white{
       color:white;
-    }
-    p {
-      padding-top: 15px;
-      color: #e5e5e5;
-      text-align: center;
-      font-size: 0.94rem;
     }
     form {
       display: flex;
@@ -78,30 +77,28 @@ export const StyledHome = styled.div`
       justify-content: center;
 
       input[type='text'] {
-        background: url(${localisation}) no-repeat 3px;
-        background-size: 20px;
+        background: rgba(219, 219, 219, 0.9);
+        border:1px solid white;
+        width: 250px;
         height: 35px;
-        width: 60%;
-        border: 3px solid white;
-        border-radius:5px;
-        color: white;
-        padding-left:30px
+        margin: 60px 0;
+        border-radius: 10px;
+        color: ##666A7C;
         text-align: left;
+        padding: 10px;
         font-size: 16px;
         ::-webkit-input-placeholder {
-          color: white;
+          color: #666A7C;
           font-size: 12px;
-          fonct-weight:regular;
         }
       }
     }
     button {
       width: 170px;
-      background-color: #56c1cb;
+      background-color:#56C1CB;
       font-size: 11px;
       font-weight: 600;
-      color: #fff;
-      border: none;
+      color: white;
       margin:0 auto;
       border-radius: 10px;
       padding: 14px;
@@ -141,6 +138,19 @@ export const StyledHome = styled.div`
         font-size: 14px;
         padding: 16px;
       }
+      .row{
+        height: 50%;
+      }
+      .row-half{
+        border-top-left-radius:5px;
+        border-bottom-left-radius:5px;    
+      }
+  
+      .row-half.right{
+        background: none;
+        width: 60%;
+      }
+  
     }
   }
 `;

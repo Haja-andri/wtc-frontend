@@ -9,7 +9,10 @@ export const StyledHeader = styled.header`
   position: fixed;
   top: 0;
   z-index: 10;
-  background-color: ${props => (props.landing ? '' : 'rgb(229,229,229)')};
+  background-color: white;
+  padding-right:50px;
+  box-shadow: ${props => (props.landing ? 'none' : '0px 15px 12px -10px rgba(238,238,238,1)')};
+  border-bottom:1px solid #eee;
   .logo {
     width: 80px;
     &:hover {
@@ -27,18 +30,17 @@ export const StyledHeader = styled.header`
       font-size: 12px;
       font-weight: 400;
       margin: 0 0px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding-left:10px;
+      padding-right:10px;
       margin:10px;
       background: none;
-      border: ${props =>
-        props.landing ? '2px solid #fff' : 'none'};
+      border: none;
       border-radius: 5px;
       color: #666A7C;
       transition: all 0.3s ease 0s;
       &:hover {
         transition: all 0.3s ease 0s;
-        color: ${props => (props.landing ? '#fff' : '#56c1cb')};
+        color: ${props => (props.landing ? '#56c1cb' : '#56c1cb')};
         transform: translateY(-7px);
       }
     }
@@ -83,7 +85,7 @@ export const StyledHeader = styled.header`
       button {
         height: 40px;
         font-size: 16px;
-        color: ${props => (props.landing ? '#fff' : '#666A7C')};
+        color: #666A7C;
       }
     }
   }

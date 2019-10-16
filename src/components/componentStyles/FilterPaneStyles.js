@@ -3,8 +3,9 @@ import styled from 'styled-components';
 export const FilterPaneStyle = styled.div`
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid rgb(229,229,229);
-  padding-top: 20px;
+  border-bottom: 1px solid #eee;
+  padding-top: 40px;
+  padding-bottom: 10px;
   .filter {
     color: #56c1cb;
     text-align: center;

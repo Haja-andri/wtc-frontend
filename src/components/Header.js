@@ -48,19 +48,19 @@ const Header = props => {
             ?
             <>
               <button className="add-space" onClick={displayAddForm}>
-                Add a Place
+                ADD A PLACE
               </button>
               <button onClick={onLogout}>
-                Logout
+                LOGOUT
               </button>
             </>
             : (
               <>
                 <Link to="/signup">
-                  <button>Sign Up</button>
+                  <button>SIGN-UP</button>
                 </Link>
                 <Link to="/login">
-                  <button>Login</button>
+                  <button>LOGIN</button>
                 </Link>
               </>
             )}

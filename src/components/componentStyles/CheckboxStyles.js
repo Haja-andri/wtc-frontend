@@ -19,8 +19,9 @@ export const StyledCheckbox = styled.label`
     left: 0;
     height: 20px;
     width: 20px;
-    background-color: #eee;
+    background-color: #fff;
     border-radius: 2px;
+    border:1px solid #DBDBDB;
   }
   &:hover input ~ span {
     background-color: #ccc;
