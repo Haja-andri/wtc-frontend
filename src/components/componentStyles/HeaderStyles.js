@@ -8,11 +8,8 @@ export const StyledHeader = styled.header`
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 2;
-  padding-right:20px;
-  background-color: ${props => (props.landing ? '' : '#fff')};
-  border-bottom: ${props => (props.landing ? 'none' : '1px solid #eee')};
-  box-shadow: ${props => (props.landing ? 'none' : '0 14px 28px rgba(0,0,0,0.1)')};
+  z-index: 10;
+  background-color: ${props => (props.landing ? '' : 'rgb(229,229,229)')};
   .logo {
     width: 80px;
     &:hover {
@@ -37,7 +34,7 @@ export const StyledHeader = styled.header`
       border: ${props =>
         props.landing ? '2px solid #fff' : 'none'};
       border-radius: 5px;
-      color: ${props => (props.landing ? '#fff' : '#111111')};
+      color: #666A7C;
       transition: all 0.3s ease 0s;
       &:hover {
         transition: all 0.3s ease 0s;
@@ -86,6 +83,7 @@ export const StyledHeader = styled.header`
       button {
         height: 40px;
         font-size: 16px;
+        color: ${props => (props.landing ? '#fff' : '#666A7C')};
       }
     }
   }
