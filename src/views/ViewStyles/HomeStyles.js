@@ -106,6 +106,8 @@ export const StyledHome = styled.div`
       }
     }
   }
+
+
   @media (min-width: 600px) {
     .container {
       .row{
@@ -144,12 +146,11 @@ export const StyledHome = styled.div`
       .row{
         height: 70%;
         width: 85%;
+        box-shadow: 0 10px 6px -6px grey;
       }
       .row-half{
         border-top-right-radius:5px;
         border-bottom-right-radius:5px;    
-        margin-right:50px;
-        box-shadow: 18px 18px 8px -5px rgba(238,238,238,0.66);
       }
   
       .row-half.right{
