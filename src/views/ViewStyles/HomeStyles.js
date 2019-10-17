@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import home from '../../assets/map-home.jpg';
 import localisation from '../../assets/icons8-marker-red.png';
 
 const imagesStock = [
@@ -149,10 +148,6 @@ export const StyledHome = styled.div`
           ::-webkit-input-placeholder {
             font-size: 16px;
           }
-        }
-        input[type='submit'] {
-          height: 50px;
-          width: 50px;
         }
       }
       button {

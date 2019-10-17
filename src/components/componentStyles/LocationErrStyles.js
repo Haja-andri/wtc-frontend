@@ -41,16 +41,16 @@ export const StyledLocationErr = styled.div`
     input[type='text'] {
       background: url(${localisation}) no-repeat 3px;
       background-size: 20px;
-      width: 85%;
-      height: 35px;
+      width: 90%;
+      height: 50px;
       margin: 0 auto;
       border:1px solid #DBDBDB;
-      color: black;
+      color: #666A7C;
       text-align: left;
       padding-left: 30px;
       ::-webkit-input-placeholder {
-        color: ##666A7C;
-        font-size: 14px;
+        color: #666A7C;
+        font-size: 1rem;
       }
     }
     }
