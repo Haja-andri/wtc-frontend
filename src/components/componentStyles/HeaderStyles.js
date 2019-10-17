@@ -10,11 +10,12 @@ export const StyledHeader = styled.header`
   top: 0;
   z-index: 10;
   background-color: white;
-  padding-right:50px;
+  padding-right:20px;
   box-shadow: ${props => (props.landing ? 'none' : '0px 15px 12px -10px rgba(238,238,238,1)')};
   border-bottom:1px solid #eee;
   .logo {
-    width: 80px;
+    margin-top:15px;
+    width: 100px;
     &:hover {
       cursor: pointer;
     }
@@ -27,11 +28,11 @@ export const StyledHeader = styled.header`
     align-items: center;
     button {
       height: 30px;
-      font-size: 12px;
+      font-size: .8rem;
       font-weight: 400;
       margin: 0 0px;
-      padding-left:10px;
-      padding-right:10px;
+      padding-left:5px;
+      padding-right:0px;
       margin:10px;
       background: none;
       border: none;

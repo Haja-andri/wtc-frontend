@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import home from '../../assets/map-home.jpg';
-import localisation from '../../assets/icons8-marker-red.png';
 
 export const StyledHome = styled.div`
   height: 100vh;
@@ -47,18 +46,15 @@ export const StyledHome = styled.div`
     }
 
     h2, h3 {
-      font-weight: bolder;
-      font-size: 32px;
       line-height: 33px;
       text-align: center;
       color: #666A7C;
-      font-family: 'Roboto', sans-serif;
       margin:0 auto;
       margin-bottom:20px;
       width: 70%;
     }
     h2{
-      font-size: 24px;
+      font-size: 2.4rem;
     }
 
     p {
@@ -66,6 +62,7 @@ export const StyledHome = styled.div`
       padding-bottom: 30px;
       text-align: center;
       color: #666A7C;
+      width: 90%;
     }
     .white{
       color:white;
@@ -79,7 +76,7 @@ export const StyledHome = styled.div`
         background: rgba(219, 219, 219, 0.9);
         border:1px solid white;
         width: 250px;
-        height: 35px;
+        height: 40px;
         margin: 60px 0;
         border-radius: 5px;
         color: #666A7C;
@@ -88,14 +85,14 @@ export const StyledHome = styled.div`
         font-size: 16px;
         ::-webkit-input-placeholder {
           color: #666A7C;
-          font-size: 12px;
+          font-size: 1rem;
         }
       }
     }
     button {
       width: 190px;
       background-color:#56C1CB;
-      font-size: 11px;
+      font-size: 1rem;
       font-weight: 600;
       color: white;
       margin:0 auto;
@@ -118,7 +115,7 @@ export const StyledHome = styled.div`
         border-left: none;
       }
       h2 {
-        font-size: 42px;
+        font-size: 3rem;
         line-height: 50px;
       }
       p {
@@ -146,7 +143,7 @@ export const StyledHome = styled.div`
       .row{
         height: 70%;
         width: 85%;
-        box-shadow: 0 10px 6px -6px grey;
+        box-shadow: 0 14px 6px -6px #eee;
       }
       .row-half{
         border-top-right-radius:5px;

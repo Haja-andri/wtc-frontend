@@ -39,7 +39,7 @@ const { setGeolocationValue, clearLocations, history, clearAllLocations } = prop
       <div className="container">
         <div className="row effect2">
         <div className="row-half right">
-          <h2>Find a place to code</h2>
+          <h2>Find a place<br/> to code today</h2>
           <p>Find the best places to work remotely, all  sourced from our community of remote workers.</p>
           <button onClick={handleClick}>FIND PLACES AROUND ME</button>
         </div>
