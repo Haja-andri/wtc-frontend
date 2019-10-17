@@ -31,9 +31,8 @@ export const StyledHeader = styled.header`
       font-size: .8rem;
       font-weight: 400;
       margin: 0 0px;
-      padding-left:5px;
-      padding-right:0px;
-      margin:10px;
+      padding-left:10px;
+      padding-right:10px;
       background: none;
       border: none;
       border-radius: 5px;
@@ -84,6 +83,7 @@ export const StyledHeader = styled.header`
     }
     .auth {
       button {
+        margin:10px;
         height: 40px;
         font-size: 16px;
         color: #666A7C;
