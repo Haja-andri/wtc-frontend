@@ -24,7 +24,7 @@ export const StyledHome = styled.div`
   z-index: 5;
 
   .container {
-    background:white;
+    background: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,7 +42,6 @@ export const StyledHome = styled.div`
     .row-half{
       display:flex;
       flex-direction: column;
-      justify-content: center;
       width: 100%;
       background: none;
       color: #666666;
@@ -56,9 +55,16 @@ export const StyledHome = styled.div`
     }
 
     .row-half.right{
+      justify-content: center;
       background: white;
       padding-bottom:10px;
     }
+
+    .row-half.left{
+      justify-content: flext-start;
+      padding-top:30px;
+    }
+
 
     h2, h3 {
       line-height: 33px;
@@ -88,13 +94,12 @@ export const StyledHome = styled.div`
       justify-content: center;
 
       input[type='text'] {
-        background-color: rgba(219, 219, 219, 0.9);
+        background-color: rgba(219, 219, 219, 0.8);
         background-image: url(${localisation});
         background-size: 20px;  
         background-position:
         top 18px left 5px; /* this positions the second image */
         background-repeat:no-repeat; 
-        border:1px solid white;
         width: 80%;
         height: 60px;
         border-radius: 5px;
@@ -176,6 +181,10 @@ export const StyledHome = styled.div`
         border-bottom-left-radius:5px;    
         margin-right:0px;
       }
+          
+    .row-half.left{
+      justify-content: center;
+    }
   
     }
   }

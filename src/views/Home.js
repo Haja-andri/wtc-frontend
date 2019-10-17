@@ -43,7 +43,7 @@ const { setGeolocationValue, clearLocations, history, clearAllLocations } = prop
           <p>Find the best places to work remotely, all  sourced from our community of remote workers.</p>
           <button onClick={handleClick}>FIND PLACES AROUND ME</button>
         </div>
-        <div className="row-half">
+        <div className="row-half left">
         <form type="submit">
           <input
             type="text"
