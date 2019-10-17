@@ -2,6 +2,19 @@ import styled from 'styled-components';
 import home from '../../assets/map-home.jpg';
 import localisation from '../../assets/icons8-marker-red.png';
 
+const imagesStock = [
+  "https://source.unsplash.com/6bXvYyAYVrE/1600x900",
+  "https://source.unsplash.com/dZxQn4VEv2M/1600x900",
+  "https://source.unsplash.com/qE1jxYXiwOA/1600x900",
+  "https://source.unsplash.com/tKN1WXrzQ3s/1600x900",
+  "https://source.unsplash.com/0I9jSdBwydg/1600x900",
+]
+
+const getImage = (current) => {
+  return imagesStock[current]
+}
+
+
 export const StyledHome = styled.div`
   height: 100vh;
   background:white;
@@ -36,7 +49,9 @@ export const StyledHome = styled.div`
       color: #666666;
       height: 100%;
       background: rgba(219, 219, 219, 0.2);
-      background-image: url(${home});
+      background-image: url(${()=>{
+        return getImage(0);
+      }});
       background-size: cover;
       background-position: center;
     }

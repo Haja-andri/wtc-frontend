@@ -37,7 +37,7 @@ const { setGeolocationValue, clearLocations, history, clearAllLocations } = prop
     <StyledHome>
       <Header landing={true} {...props} />
       <div className="container">
-        <div className="row effect2">
+        <div className="row">
         <div className="row-half right">
           <h2>Find a place<br/> to code today</h2>
           <p>Find the best places to work remotely, all  sourced from our community of remote workers.</p>
