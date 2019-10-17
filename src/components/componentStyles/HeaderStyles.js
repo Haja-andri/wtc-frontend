@@ -40,16 +40,17 @@ export const StyledHeader = styled.header`
       transition: all 0.3s ease 0s;
       &:hover {
         transition: all 0.3s ease 0s;
-        color: ${props => (props.landing ? '#56c1cb' : '#56c1cb')};
+        color: ${props => (props.landing ? '#666A7C' : '#666A7C')};
         transform: translateY(-7px);
       }
     }
     .add-space {
-      background: #56c1cb;
-      color: #fff;
+      background: none;
+      color: #666A7C;
+      border:1px solid #666A7C;
       border-radius:5px;
       &:hover {
-        color: #fff;
+        color: #666A7C;
       }
     }
   }

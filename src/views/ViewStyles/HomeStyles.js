@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import home from '../../assets/map-home.jpg';
+import localisation from '../../assets/icons8-marker-red.png';
 
 export const StyledHome = styled.div`
   height: 100vh;
@@ -73,15 +74,19 @@ export const StyledHome = styled.div`
       justify-content: center;
 
       input[type='text'] {
-        background: rgba(219, 219, 219, 0.9);
+        background-color: rgba(219, 219, 219, 0.9);
+        background-image: url(${localisation});
+        background-size: 20px;  
+        background-position:
+        top 18px left 5px; /* this positions the second image */
+        background-repeat:no-repeat; 
         border:1px solid white;
         width: 80%;
         height: 60px;
-        margin: 60px 0;
         border-radius: 5px;
         color: #666A7C;
         text-align: left;
-        padding: 10px;
+        padding: 27px;
         font-size: 16px;
         ::-webkit-input-placeholder {
           color: #666A7C;
@@ -143,23 +148,22 @@ export const StyledHome = styled.div`
       .row{
         height: 70%;
         width: 85%;
+        border:1px solid #DBDBDB;
+        border-radius: 5px;
         box-shadow: 0 14px 6px -6px #eee;
       }
       .row-half{
+        min-width:600px;
         border-top-right-radius:5px;
         border-bottom-right-radius:5px;    
-        min-width:600px;
       }
   
       .row-half.right{
         background: white;
         width: 60%;
         min-width:380px;
-        border:1px solid #DBDBDB;
         border-top-left-radius:5px;
         border-bottom-left-radius:5px;    
-        border-top-right-radius:0px;
-        border-bottom-right-radius:0px;    
         margin-right:0px;
       }
   
