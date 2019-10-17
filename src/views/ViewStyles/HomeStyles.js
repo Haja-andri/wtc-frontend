@@ -75,8 +75,8 @@ export const StyledHome = styled.div`
       input[type='text'] {
         background: rgba(219, 219, 219, 0.9);
         border:1px solid white;
-        width: 250px;
-        height: 40px;
+        width: 80%;
+        height: 60px;
         margin: 60px 0;
         border-radius: 5px;
         color: #666A7C;
@@ -148,11 +148,13 @@ export const StyledHome = styled.div`
       .row-half{
         border-top-right-radius:5px;
         border-bottom-right-radius:5px;    
+        min-width:600px;
       }
   
       .row-half.right{
         background: white;
         width: 60%;
+        min-width:380px;
         border:1px solid #DBDBDB;
         border-top-left-radius:5px;
         border-bottom-left-radius:5px;    
